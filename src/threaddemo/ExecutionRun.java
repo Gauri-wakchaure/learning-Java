@@ -1,0 +1,28 @@
+package threaddemo;
+
+public class ExecutionRun extends Thread 
+{
+	public void run()
+	{
+		for(int i=0; i<5; i++)
+		{
+			try {
+				Thread.sleep(500);
+			}
+			catch(Exception e)
+			{
+				System.out.println(e);
+			}
+			System.out.println(i);
+
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ExecutionRun e1= new ExecutionRun();
+		ExecutionRun e2 = new ExecutionRun();
+		e1.start();
+		e2.start();
+	}
+}
