@@ -43,6 +43,21 @@ public class ArrayListDemo {
         
 		System.out.println("  Descending Sorded array List:"+a4);
 
+        a4.remove(2);
+		System.out.println("After Removing array List element:"+a4);
+         
+		a4.remove("Cow");
+		System.out.println("After Removing array List Element:"+a4);
+		
+		a4.addAll(a3);
+		System.out.println("Add All array List:"+a4);
+		
+		a4.removeAll(a3);
+		System.out.println("After using Remove All array List:"+a4);
+		
+		
+
+
 
 
 	}
